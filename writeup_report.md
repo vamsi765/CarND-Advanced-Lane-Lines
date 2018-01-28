@@ -95,4 +95,8 @@ Here's a [link to my video result](./project_video_output.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-I would take bit more time to understand how the HLS/RGB/SOLED can be better mixed to form more accutae detecting of lanes.  
+I would take bit more time to understand how the HLS/RGB/SOLED can be better mixed to form more accutae detecting of lanes.
+I would update the sane_lane function so that it would make history of the error and tries to correct itself it if it being in error for a long time
+I would plug in average width of the lane
+I would add code for smoothing out the lane finding not to have huge deviations
+ 
