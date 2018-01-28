@@ -69,12 +69,15 @@ I verified that my perspective transform was working as expected by drawing the 
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
-Then I did some other stuff and fit my lane lines with a 2nd order polynomial as shown in node 7 and node 8
+
+Then I did find the valid line points in the each of the windows and fit my lane lines with a 2nd order polynomial. I use these generated polynomial widths to produce the x and y pixel fits as shown in node 7 and node 8
 
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-I did this in node 10
+I did this in node 10 using the formulae provided in the tutorial for radius of curvature.
+I do this seperately for both x and y to find their radius of curvature
+for lane center I used the boundary where the lines are with respect the binary image[Here I had to use the last points in array as they are closed to the vehicle]
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
